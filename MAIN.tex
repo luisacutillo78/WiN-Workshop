@@ -1,0 +1,96 @@
+\documentclass[openany, parskip=full, 12pt, a4]{scrbook}
+
+\input{preamble}
+\input{preamble_booklet}
+	
+\begin{document}
+
+% COVER PAGE
+%--------------------------------------------------------------------
+\includepdf{images/cover_win}	
+	
+	
+% BLANK PAGE
+%---------------------------------------------------------------------
+\mbox{}
+\thispagestyle{empty}
+\vfill
+\begin{center}
+	The electronic version of this booklet can be found at: \\
+	https://win.leeds.ac.uk\\
+	
+	
+	The codes used to generate this booklet, including the reference to the \LaTeX\space template, are available at \url{https://github.com/luisacutillo78/WiN-Workshop}
+\end{center}
+
+\newpage
+
+% TABLE OF CONTENTS 
+%---------------------------------------------------------------------
+\tableofcontents
+
+% ABOUT
+%---------------------------------------------------------------------
+\chapter{About}
+
+\input{about}
+
+% TIMETABLE 
+%---------------------------------------------------------------------
+\chapter{Timetable}
+
+CT: Contributed Talk, KL: Keynote Lecture.
+\input{timetable.tex}
+
+% TALKS 
+%---------------------------------------------------------------------
+\chapter{List of Abstracts -- Talks}
+
+\section{Wednesday 27th Feb}
+\input{abstracts/tex/Wednesday}
+\section{Thursday 28th Feb}
+\input{abstracts/tex/Thursday}
+
+\section{Friday 1st March}
+
+\input{abstracts/tex/Friday}
+
+% POSTERS
+%------------------------------------------------------------------
+\chapter{List of Posters} 
+
+\vspace{-2.5em}
+
+%\section{Tuesday Session}
+
+\input{abstracts/tex/Posters}
+
+
+% LIST OF PARTICIPANTS
+%------------------------------------------------------------------
+\chapter{List of Participants}
+ 
+\input{list_of_participants}
+ 
+% USEFUL INFO
+%------------------------------------------------------------------
+\chapter{Useful Information}
+
+\input{useful_info}
+
+% SPONSORS
+%------------------------------------------------------------------
+\chapter{Partner Institutions and Sponsors}
+
+\input{logos.tex}
+
+\newpage
+
+% BACK PAGE
+%-----------------------------------------------------------------
+
+\pagecolor{myblue}
+\thispagestyle{empty}
+\mbox{}
+
+\end{document}
